@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --white: #FFFF;
+    --black:#0000;
+    --very-light-pink:#C7C7C7;
+    --text-input-field:#F7F7F7;
+    --hospital-green:#ACD9B2;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
