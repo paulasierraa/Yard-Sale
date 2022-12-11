@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CreatePasswordComponent } from './components/create-password/create-password.component';
 import { EmailSendComponent } from './components/email-send/email-send.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreatePasswordComponent,
-    EmailSendComponent
+    EmailSendComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,21 @@
+.form a{
+    font-size: var(--sm);
+    color: var(--hospital-green);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 54px;
+}
+.input-email{
+    margin-bottom: 22px;
+}
+.register-container{
+    width: inherit;
+}
+@media(max-width:640px)
+{
+    .register-container{
+        position: absolute;
+        bottom:0;
+        margin-bottom: 12px;
+    }
+}
