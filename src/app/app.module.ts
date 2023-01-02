@@ -6,6 +6,10 @@ import { CreatePasswordComponent } from './components/create-password/create-pas
 import { EmailSendComponent } from './components/email-send/email-send.component';
 import { LoginComponent } from './components/login/login.component';
 import { ManageAccountComponent } from './components/manage-account/manage-account.component';
+import { EditAccountComponent } from './components/edit-account/edit-account.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +17,11 @@ import { ManageAccountComponent } from './components/manage-account/manage-accou
     CreatePasswordComponent,
     EmailSendComponent,
     LoginComponent,
-    ManageAccountComponent
+    ManageAccountComponent,
+    EditAccountComponent,
+    ProductComponent,
+    ProductListComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule
