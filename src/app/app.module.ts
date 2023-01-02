@@ -10,6 +10,8 @@ import { EditAccountComponent } from './components/edit-account/edit-account.com
 import { ProductComponent } from './components/product/product.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { MainComponent } from './components/main/main.component';
+import { ToggleMenuComponent } from './components/toggle-menu/toggle-menu.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MainComponent } from './components/main/main.component';
     EditAccountComponent,
     ProductComponent,
     ProductListComponent,
-    MainComponent
+    MainComponent,
+    ToggleMenuComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule
