@@ -16,6 +16,7 @@ import { OrderProductComponent } from './components/order-product/order-product.
 import { OrderComponent } from './components/order/order.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     OrderProductComponent,
     OrderComponent,
     OrdersComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule
