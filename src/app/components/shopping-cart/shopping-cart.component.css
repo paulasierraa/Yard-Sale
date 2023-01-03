@@ -56,3 +56,10 @@
     padding: 0;
     margin: 0;
 }
+@media(min-width:640px)
+{
+    .my-order{
+        place-items: end;
+        align-items: center;
+    }
+}
