@@ -12,6 +12,9 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { MainComponent } from './components/main/main.component';
 import { ToggleMenuComponent } from './components/toggle-menu/toggle-menu.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { OrderProductComponent } from './components/order-product/order-product.component';
+import { OrderComponent } from './components/order/order.component';
+import { OrdersComponent } from './components/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     ProductListComponent,
     MainComponent,
     ToggleMenuComponent,
-    SidebarComponent
+    SidebarComponent,
+    OrderProductComponent,
+    OrderComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule

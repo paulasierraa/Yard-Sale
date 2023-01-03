@@ -1,0 +1,21 @@
+.order-product{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.order-product img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product-name{
+    color: var(--very-light-pink);
+}
+.product-price
+{
+    font-size: var(--md);
+    font-weight: bold;
+}

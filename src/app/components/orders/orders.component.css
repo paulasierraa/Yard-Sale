@@ -1,0 +1,47 @@
+.my-order{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+.title{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.my-order-container
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.my-order-content{
+    display: flex;
+    flex-direction: column;
+}
+.order-detail
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+.my-order-information{
+    display: flex;
+    flex-direction: column;
+}
+.date-order{
+    font-size: var(--md);
+    font-weight: bold;
+}
+.product-ammount{
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+.my-order-price{
+    display: flex;
+}
+.my-order-price p {
+    margin-right: 10px;
+}
