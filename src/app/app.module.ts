@@ -15,6 +15,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { OrderProductComponent } from './components/order-product/order-product.component';
 import { OrderComponent } from './components/order/order.component';
 import { OrdersComponent } from './components/orders/orders.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { OrdersComponent } from './components/orders/orders.component';
     SidebarComponent,
     OrderProductComponent,
     OrderComponent,
-    OrdersComponent
+    OrdersComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule
