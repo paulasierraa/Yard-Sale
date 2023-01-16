@@ -1,7 +1,6 @@
 .product-detail{
     width: 360px;
     padding-bottom:24px;
-
 }
 .product-detail-close{
     background-color: var(--white);
@@ -58,8 +57,12 @@
 @media(min-width:640px)
 {
     .product-detail{
-        position: absolute;
+        position: fixed;
         right: 0;
+        top: 0;
+        z-index: 10000;
+        height: 100%;
+        background: white;
     }
 }
 @media(max-width:640px)

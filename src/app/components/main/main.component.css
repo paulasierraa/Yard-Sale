@@ -1,0 +1,9 @@
+.main-container{
+    margin-top: var(--md);
+}
+.d-none{
+    display: none;
+}
+.d-fixed{
+    display: fixed;
+}

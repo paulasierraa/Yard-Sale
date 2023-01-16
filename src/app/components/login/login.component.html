@@ -6,8 +6,8 @@
             <input type="text" id="email" placeholder="camilayokoo@gmail.com" class="input input-email">
             <label for="password-reenter" class="label">Contraseña</label>
             <input type="password" id="password-reenter" placeholder="*********" class="input input-password">
-            <input type="submit" value="Iniciar sesión" class="primary-button form-button">
-            <a href="/">Forgot my password</a>
+            <input type="submit" value="Iniciar sesión" class="primary-button form-button"  [routerLink]="'menu'">
+            <a [routerLink]="'forgot-password'">Forgot my password</a>
         </form>
         <div class="register-container">
             <button class="secondary-button register-button">Registrate</button>

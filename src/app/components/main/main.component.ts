@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  displayDetail: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  openDetail() {
+    this.displayDetail = true;
+  }
+  closeDetail(){
+    this.displayDetail = false;
   }
 
 }
