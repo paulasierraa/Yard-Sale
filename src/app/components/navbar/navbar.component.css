@@ -49,6 +49,7 @@
 }
 .navbar-shopping-cart{
     position: relative;
+    cursor: pointer;
 }
 .navbar-shopping-cart .ammount-products{
     width: 16px;

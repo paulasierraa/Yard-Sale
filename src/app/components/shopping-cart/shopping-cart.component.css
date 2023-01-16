@@ -51,6 +51,7 @@
 .title-container img{
     transform: rotate(180deg);
     margin-right: 14px;
+    cursor: pointer;
 }
 .title{
     padding: 0;
@@ -59,7 +60,12 @@
 @media(min-width:640px)
 {
     .my-order{
-        place-items: end;
-        align-items: center;
+        width: 360px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10000;
+        height: 100%;
+        background: var(--white);
     }
 }

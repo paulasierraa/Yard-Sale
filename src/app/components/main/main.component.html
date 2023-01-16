@@ -1,5 +1,7 @@
-<app-navbar></app-navbar>
+<app-navbar (onOpen)="openShoppingCart()"></app-navbar>
 <section class="main-container">
     <app-product-list (onDetail)="openDetail()" ></app-product-list>
     <app-product-detail [ngClass]="{'d-none':!displayDetail,'d-fixed':displayDetail}" (onClose)="closeDetail()"></app-product-detail>
+    <app-shopping-cart [ngClass]="{'d-none':!displayShoppingCart,'d-fixed':displayShoppingCart}" (onClose)="closeShoppingCart()" ></app-shopping-cart>
+
 </section>
