@@ -1,27 +1,18 @@
 # YardSale
+https://gardenstore-48cdb.web.app/menu
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
-## Development server
+🌐Login
+![image](https://user-images.githubusercontent.com/48034536/212688520-a516d737-d43d-4f1e-bb5e-ac214da4c846.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+🔐Recuperar contraseña
+![image](https://user-images.githubusercontent.com/48034536/212688590-ecc9ae8c-fdb9-4b76-83f9-4a3c282c46f9.png)
 
-## Code scaffolding
+📃Menú principal
+![image](https://user-images.githubusercontent.com/48034536/212688667-df3f1ccb-648f-4339-9d43-3b51898ce58f.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+💸Detalle producto
+![image](https://user-images.githubusercontent.com/48034536/212688730-8ec0bcb4-1f91-4a91-9466-833934162b68.png)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+🛒Mi carrito
+![image](https://user-images.githubusercontent.com/48034536/212688770-c35a31a7-21ce-4b0f-96b2-6f6d715eacac.png)
