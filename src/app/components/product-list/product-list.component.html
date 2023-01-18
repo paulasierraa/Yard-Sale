@@ -1,6 +1,4 @@
 <div class="cards-container">
-    <app-product
-        (onDetail)="openDetail()"
-        *ngFor="let i of [1,2,3,4,5,6,7,8,8,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]">
+    <app-product (onDetail)="openDetail()" *ngFor="let product of productList" [product]="product">
     </app-product>
 </div>
