@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
   displayDetail: boolean = false;
   displayShoppingCart: boolean = false;
-
+  showMenu: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -16,17 +16,17 @@ export class MainComponent implements OnInit {
   openDetail() {
     this.displayDetail = true;
   }
-  closeDetail(){
+  closeDetail() {
     this.displayDetail = false;
   }
-  openShoppingCart()
-  {
-    this.displayShoppingCart=true;
+  openShoppingCart() {
+    this.displayShoppingCart = true;
   }
-  closeShoppingCart()
-  {
-    this.displayShoppingCart=false;
+  closeShoppingCart() {
+    this.displayShoppingCart = false;
   }
-
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
 
 }

@@ -1,4 +1,7 @@
-<div class="mobile-menu">
+<div class="mobile-menu" [class.active]="show">
+    <div class="product-detail-close" (click)="show=false;">
+        <img src="../../../assets/icons/icon_close.png" alt="close">
+    </div>
     <ul class="categories-list">
         <li><a href="" class="sidebar-title">CATEGORÍAS</a></li>
         <li><a href="" class="sidebar-title">Todo</a></li>

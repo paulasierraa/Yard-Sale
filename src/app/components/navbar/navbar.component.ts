@@ -7,6 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Output() onOpen:EventEmitter<any> = new EventEmitter();
+  @Output() onToggleSidebar:EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
@@ -14,6 +16,10 @@ export class NavbarComponent implements OnInit {
   openShoppingCart()
   {
     this.onOpen.emit();
+  }
+  toggleSidebar()
+  {
+    this.onToggleSidebar.emit();
   }
 
 }

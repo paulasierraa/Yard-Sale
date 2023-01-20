@@ -1,4 +1,5 @@
-<app-navbar (onOpen)="openShoppingCart()"></app-navbar>
+<app-navbar (onOpen)="openShoppingCart()" (onToggleSidebar)="toggleMenu()"></app-navbar>
+<app-sidebar [show]="showMenu"></app-sidebar>
 <section class="main-container">
     <app-product-list (onDetail)="openDetail()" ></app-product-list>
     <app-product-detail [ngClass]="{'d-none':!displayDetail,'d-fixed':displayDetail}" (onClose)="closeDetail()"></app-product-detail>
