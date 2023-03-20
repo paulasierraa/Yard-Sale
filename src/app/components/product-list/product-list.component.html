@@ -1,4 +1,4 @@
 <div class="cards-container">
-    <app-product (onDetail)="openDetail()" *ngFor="let product of productList" [product]="product">
+    <app-product (onDetail)="openDetail($event)" *ngFor="let product of productList" [product]="product">
     </app-product>
 </div>

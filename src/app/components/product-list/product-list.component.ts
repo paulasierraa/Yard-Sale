@@ -19,8 +19,8 @@ export class ProductListComponent implements OnInit {
     this.fetchProducts();
   }
 
-  openDetail() {
-    this.onDetail.emit();
+  openDetail(id:number) {
+    this.onDetail.emit(id);
   }
   fetchProducts() {
     this.productService.getAllProducts().subscribe((response) => { this.productList = response });

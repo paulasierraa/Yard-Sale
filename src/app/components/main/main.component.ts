@@ -9,11 +9,15 @@ export class MainComponent implements OnInit {
   displayDetail: boolean = false;
   displayShoppingCart: boolean = false;
   showMenu: boolean = false;
+
+  //productDetail
+  productId: number = -1;
   constructor() { }
 
   ngOnInit(): void {
   }
-  openDetail() {
+  openDetail(productId) {
+    this.productId = productId;
     this.displayDetail = true;
   }
   closeDetail() {

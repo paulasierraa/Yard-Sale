@@ -19,6 +19,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ErrorImageDirective } from './core/directives/error-image.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AppRoutingModule } from './app-routing.module';
     OrdersComponent,
     NavbarComponent,
     ProductDetailComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ErrorImageDirective
   ],
   imports: [
     BrowserModule,

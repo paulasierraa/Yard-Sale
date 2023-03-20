@@ -14,8 +14,8 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openDetailProduct()
+  openDetailProduct(product:Product)
   {
-    this.onDetail.emit();
+    this.onDetail.emit(product.id);
   }
 }

@@ -12,7 +12,10 @@ export class ProductService {
   private _controller: string = "products";
   constructor(private http: HttpClient) { }
 
-  getAllProducts():Observable<Product[]> {
+  getAllProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(`${environment.apiUrl + this._controller}`);
+  }
+  getProductById(productId: number): Observable<Product> {
+    return this.http.get<Product>(`${environment.apiUrl + this._controller}/${productId}`);
   }
 }
