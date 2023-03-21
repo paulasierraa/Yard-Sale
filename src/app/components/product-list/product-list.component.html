@@ -2,3 +2,6 @@
     <app-product (onDetail)="openDetail($event)" *ngFor="let product of productList" [product]="product">
     </app-product>
 </div>
+<div class="button-container d-flex">
+    <button class="secondary-button form-button" (click)="loadMore()">Ver más</button>
+</div>

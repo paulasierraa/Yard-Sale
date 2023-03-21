@@ -5,3 +5,14 @@ export interface Product {
     images: string[];
     description: string;
 }
+export interface CreateProductDTO extends Omit<Product,'id'|'category'>
+{
+    categoryId:number;
+}
+/**
+ * @Partial pone todos los parámetros opcionales
+ */
+export interface UpdateProductDTO extends Partial<CreateProductDTO>
+{
+
+}

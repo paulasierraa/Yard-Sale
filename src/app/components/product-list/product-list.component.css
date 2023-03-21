@@ -4,6 +4,13 @@
     place-content: center;
     gap: 26px;
 }
+.button-container{
+    margin-top: var(--md);
+    justify-content: center;
+}
+.secondary-button{
+    width: 50%;
+}
 @media(max-width:640px)
 {
     .cards-container{

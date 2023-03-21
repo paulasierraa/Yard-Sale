@@ -11,18 +11,24 @@ export class ProductListComponent implements OnInit {
   @Output() onDetail: EventEmitter<any> = new EventEmitter();
 
   productList: Product[] = []
-
+  limit: number = 10;
+  offset = 0;
 
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.fetchProducts();
+    this.fetchProducts(this.limit, this.offset);
   }
 
-  openDetail(id:number) {
+  openDetail(id: number) {
     this.onDetail.emit(id);
   }
-  fetchProducts() {
-    this.productService.getAllProducts().subscribe((response) => { this.productList = response });
+  fetchProducts(limit: number, offset: number) {
+    this.productService.getProductsByPage(limit, offset)
+      .subscribe((response) => { this.productList = this.productList.concat(response) });
+  }
+  loadMore() {
+    this.offset += this.limit;
+    this.fetchProducts(this.limit, this.offset);
   }
 }
