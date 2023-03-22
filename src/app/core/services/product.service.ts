@@ -1,9 +1,10 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { environment } from '../../../environments/environment.prod';
 import { CreateProductDTO, Product, UpdateProductDTO } from '../models/product.model';
-import {retry} from 'rxjs/operators'
+import {catchError, retry} from 'rxjs/operators'
+import Swal from 'sweetalert2';
 @Injectable({
   providedIn: 'root'
 })
@@ -13,7 +14,16 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getProductById(productId: number): Observable<Product> {
-    return this.http.get<Product>(`${environment.apiUrl + this._controller}/${productId}`);
+    return this.http.get<Product>(`${environment.apiUrl + this._controller}/${productId}`).
+    pipe(
+      catchError((error:HttpErrorResponse)=>{
+        if(error.status==500)
+        {
+          return throwError('El servicio está fallando , porfavor intenta más tarde');
+        }
+        return throwError('Algo salió mal');
+      })
+    );
   }
   getProductsByPage(limit: number, offset: number): Observable<Product[]> {
     let paramsQuery = new HttpParams();
@@ -29,5 +39,9 @@ export class ProductService {
   }
   updateProduct(product: UpdateProductDTO, productId: number): Observable<Product> {
     return this.http.put<Product>(`${environment.apiUrl + this._controller}/${productId}`, product);
+  }
+  handlerError(error)
+  {
+
   }
 }

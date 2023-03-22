@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import Swal from 'sweetalert2';
 import { Product } from '../../core/models/product.model';
 import { ProductService } from '../../core/services/product.service';
 
