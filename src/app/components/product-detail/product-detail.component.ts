@@ -2,7 +2,7 @@ import { Component, OnInit, EventEmitter, Output, Input, OnChanges } from '@angu
 import { Product } from 'src/app/core/models/product.model';
 import { ProductService } from 'src/app/core/services/product.service';
 import Swal from 'sweetalert2';
-
+import { switchMap } from 'rxjs/operators';
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
@@ -16,29 +16,30 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    
+
   }
   ngOnChanges() {
-    if (this.productId&&this.productId>0) {
+    if (this.productId && this.productId > 0) {
       this.productService.getProductById(this.productId).subscribe((productResponse) => {
         this.productDetail = productResponse;
       },
-      (error)=>{
-        Swal.fire({
-          title:'<strong style="color: #ee3e54">Ooops..</strong>',
-          text: error,
-          imageUrl: '../../../assets/images/error/errorx.png',
-          imageWidth: 200,
-          imageHeight: 200,
-          imageAlt: 'Error image',
-          confirmButtonColor:'#ffa4c5',
-          confirmButtonText: 'Aceptar'
-        })
-      }
+        (error) => {
+          Swal.fire({
+            title: '<strong style="color: #ee3e54">Ooops..</strong>',
+            text: error,
+            imageUrl: '../../../assets/images/error/errorx.png',
+            imageWidth: 200,
+            imageHeight: 200,
+            imageAlt: 'Error image',
+            confirmButtonColor: '#ffa4c5',
+            confirmButtonText: 'Aceptar'
+          })
+        }
       )
     }
   }
   closeDetail() {
     this.onClose.emit();
   }
+
 }

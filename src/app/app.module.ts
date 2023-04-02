@@ -20,6 +20,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorImageDirective } from './core/directives/error-image.directive';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,10 @@ import { ErrorImageDirective } from './core/directives/error-image.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

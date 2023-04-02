@@ -1,13 +1,13 @@
 <div class="component-container">
     <div class="form-container">
         <img src="../../../assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
-        <form action="/" class="form">
+        <form  class="form" [formGroup]="form" (ngSubmit)="login()">
             <label for="email" class="label">Correo electrónico</label>
-            <input type="text" id="email" placeholder="camilayokoo@gmail.com" class="input input-email">
+            <input type="text" id="email" placeholder="camilayokoo@gmail.com" class="input input-email" formControlName="username">
             <label for="password-reenter" class="label">Contraseña</label>
-            <input type="password" id="password-reenter" placeholder="*********" class="input input-password">
-            <input type="submit" value="Iniciar sesión" class="primary-button form-button"  [routerLink]="'menu'">
-            <a [routerLink]="'forgot-password'">Forgot my password</a>
+            <input type="password" id="password-reenter" placeholder="*********" class="input input-password"  formControlName="password">
+            <input type="submit" value="Iniciar sesión" class="primary-button form-button" >
+            <a [routerLink]="'forgot-password'">Olvidé mi contraseña</a>
         </form>
         <div class="register-container">
             <button class="secondary-button register-button">Registrate</button>

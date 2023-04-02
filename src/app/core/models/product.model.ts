@@ -5,6 +5,7 @@ export class Product {
     images: string[];
     description: string;
     statusDetail: 'loading'|'success'|'error'|'init'='init';
+    taxes?:number;
 }
 export interface CreateProductDTO extends Omit<Product,'id'|'category'>
 {

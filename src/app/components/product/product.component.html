@@ -2,7 +2,8 @@
     <img [src]="product.images[0]" appErrorImage alt="bike-image" class="product-img" (click)="openDetailProduct(product)">
     <div class="product-info">
         <div class="product-detail">
-            <p class="product-price">{{product.price}}</p>
+            <p class="product-price">{{product.price | currency:'COP'}}</p>
+            <p class="product-price">{{product?.taxes  | currency:'COP'}}</p>
             <p class="product-name">{{product.title}}</p>
         </div>
         <div class="product-cart-button">
